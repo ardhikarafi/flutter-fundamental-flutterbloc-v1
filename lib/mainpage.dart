@@ -40,7 +40,21 @@ class MainPage extends StatelessWidget {
                   child: Icon(Icons.arrow_upward),
                 ),
               ],
-            )
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                FloatingActionButton(
+                  onPressed: () {
+                    cbloc.add(ResetUlangState());
+                  },
+                  child: Icon(Icons.settings_backup_restore),
+                )
+              ],
+            ),
           ],
         ),
       ),

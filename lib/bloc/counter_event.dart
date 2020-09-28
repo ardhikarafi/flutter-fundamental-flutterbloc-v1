@@ -6,3 +6,5 @@ abstract class CounterEvent {}
 class Increment extends CounterEvent {}
 
 class Decrement extends CounterEvent {}
+
+class ResetUlangState extends CounterEvent {}
