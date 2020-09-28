@@ -8,7 +8,6 @@ part 'counter_state.dart';
 
 class CounterBloc extends Bloc<CounterEvent, CounterState> {
   @override
-  // TODO: implement initialState
   CounterState get initialState => CounterState(0);
 
   @override
